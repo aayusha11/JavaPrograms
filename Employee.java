@@ -70,7 +70,8 @@ class Methods{
     public HashSet<Emp> getEmployeeWithName(String name){
         HashSet<Emp> ans = new HashSet();
         for(Emp temp: hs){
-            if(temp.name == name){
+            String str = temp.name;
+            if(str.equals(name)){
                 ans.add(temp);
             }
         }
